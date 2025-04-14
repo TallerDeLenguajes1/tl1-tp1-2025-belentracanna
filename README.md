@@ -85,3 +85,21 @@ Herramientas utiles:
 **gitignore.io:** Es un sitio web que permite generar archivos .gitignore personalizados segun el lenguaje de programacion, IDE o sistema operativo que estes utilizando.
 Repositorios de plantillas de .gitignore en GitHub: **GitHub** mantiene un repositorio con plantillas de .gitignore recomendadas para diferentes lenguajes y frameworks.
 Para configurar el archivo .gitignore, simplemente crea un archivo llamado .gitignore en la raiz de tu repositorio Git y editalo con un editor de texto, anadiendo los patrones de archivos y directorios que deseas ignorar. Una vez guardado, Git automaticamente dejara de rastrear los archivos y directorios que coincidan con los patrones definidos. Es importante commitear el archivo .gitignore al repositorio para que las reglas de ignorado sean compartidas con todos los colaboradores del proyecto.
+## Segundo Commit y Explicación de Direcciones de Memoria
+
+**g) Si resolvió correctamente los apartados 2 y 3 del punto anterior notará que el resultado es el mismo. ¿a qué se debe? ¿Qué obtiene en el punto 4? ¿Es igual a los anteriores? ¿Por qué?**
+
+Los resultados de los apartados 2 y 3 son el mismo porque el puntero `miPuntero` almacena la dirección de memoria de la variable `miVariable`. Por lo tanto:
+
+* **Apartado 2 (La dirección de memoria almacenada por el puntero):** Muestra el valor que contiene la variable puntero, que es la dirección de memoria de otra variable (`miVariable`).
+* **Apartado 3 (La dirección de memoria de la variable):** Muestra la ubicación en memoria donde se ha reservado espacio para la variable `miVariable`.
+
+En el **punto 4 (La dirección de memoria del puntero)**, se obtiene la dirección de memoria donde se almacena la propia variable puntero `miPuntero`. Es decir, al igual que cualquier otra variable, el puntero también ocupa un espacio en la memoria y tiene su propia dirección.
+
+El resultado del punto 4 **no es igual** a los resultados de los puntos 2 y 3. Esto se debe a que:
+
+* Los puntos 2 y 3 hacen referencia a la ubicación en memoria de la variable `miVariable`.
+* El punto 4 hace referencia a la ubicación en memoria de la variable `miPuntero` en sí misma. Son dos entidades diferentes en la memoria, aunque el puntero esté relacionado con la otra variable al almacenar su dirección.
+
+
+
